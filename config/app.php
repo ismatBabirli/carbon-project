@@ -2,6 +2,32 @@
 
 return [
 
+    "WAY" => [
+        'FOOT' => 0,
+        "bicycle" => 0,
+        "by_animal_transport" => 0,
+        "rickshaw/trishaw" => 0,
+        "moped" => 0.073,
+        "motorcycle" => 0.094,
+        "auto rickshaw" => 0.061,
+        "snowmobile" => 0.094,
+        "car electric" => 0.043,
+        "car small" => 0.11,
+        "car medium" => 0.133,
+        "car large" => 0.183,
+        "car hybrid" => 0.084,
+        "taxi" => 0.17,
+        "bus" => 0.069,
+        "mini bus" => 0.055,
+        "diesel train" => 0.06,
+        "electric train" => 0.065,
+        "underground/metro" => 0.065,
+        "electric tram/trolley bus" => 0.042,
+        "ferry" => 0.115,
+        "express boat" => 0.53,
+    ],
+    "GOOGLE_API_KEY" => "AIzaSyBpI4lx0aaCqHoCSUsngMRUKlCD0yMOEVc",
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
