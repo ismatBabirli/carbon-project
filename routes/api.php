@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::get('/distance','ResourceController@getDistanceData');
+Route::post('/distance', 'ResourceController@getDistanceData');
+//Route::post('result', 'GoogleController@complete')->name("result");

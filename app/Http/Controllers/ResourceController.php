@@ -15,11 +15,25 @@ class ResourceController extends Controller
             ->setMode(GoogleDistanceMatrix::MODE_DRIVING)
             ->sendRequest();
 
-        return response([$distance->getResponseObject()], 200);
+        $km = $distance->getResponseObject()->rows[0]->elements[0]->distance->value / 1000;
+        $result = $this->calcEmissions($km);
+        return response($result, 200);
     }
 
-    public function getEmissions()
+    public function calcEmissions($km)
     {
-        $URL = "https://calculator.carbonfootprint.com/calculator.aspx?tab=6";
+
+        $transport = [];
+        foreach (config('app.WAY') as $key => $value) {
+            $transport[] = [
+                "WAY" => $key,
+                "value" => round($value * $km, 2)
+            ];
+        }
+
+//        $transport = collect($transport)->sortBy('value');
+
+        return $transport;
     }
+
 }

@@ -1,0 +1,129 @@
+.cm-main {
+    margin-top: 5%;
+    display: flex;
+}
+
+
+.cm-main .car {
+    bottom: 15%;
+    left: 35%;
+    /*float: left;*/
+    position: absolute;
+    margin-top: 5%;
+    width: 50%;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-iteration-count: initial;
+    -webkit-animation-duration: 5s;
+
+}
+
+
+.cm-main .cm-name {
+    width: 50%;
+    text-align: center;
+    /*float: right;*/
+    margin-left: 30%;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: bold;
+    color: black;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 35%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+
+.cm-main .value {
+    /*    margin-right: 42%;*/
+    font-size: medium;
+    font-weight: bold;
+    /*width: 20px;*/
+    /*bottom: 15%;*/
+    /*float: right;*/
+    /*margin-top: 5%;*/
+}
+
+.clearAll {
+    clear: both;
+}
+
+/*Abbas*/
+.car_holder {
+    width: 100%;
+}
+
+.car_div {
+    width: 10%;
+    height: 100px;
+    position: relative;
+    animation: car_action 6s alternate;
+    -webkit-animation: car_action 6s alternate;
+    -webkit-animation-iteration-count: initial;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes car_action {
+
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 65%;
+    }
+}
+
+
+.cars_icons {
+    margin-left: 100px;
+}
+
+.smoke_icons {
+    position: relative;
+    top: 90px;
+    right: 30px;
+}
+
+.smoke_value {
+    position: relative;
+    left: 35px;
+    top: 95px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.car_names {
+    position: sticky;
+    left: 80%;
+    top: 35px;
+}
+
+.lake {
+    position: relative;
+}
+
+#image_2 {
+    animation: image_action 10s alternate;
+    -webkit-animation: image_action 10s alternate;
+    -webkit-animation-iteration-count: initial;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image_action {
+    0% {
+        clip: rect(0, 1110px, 833px, 0);
+    }
+    100% {
+        clip: rect(0, 0, 833px, 0);
+    }
+}
