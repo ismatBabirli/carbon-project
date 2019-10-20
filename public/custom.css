@@ -127,3 +127,12 @@
         clip: rect(0, 0, 833px, 0);
     }
 }
+
+.quote-main{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    font-weight: bold;
+    color: black;
+    left: 30%;
+}

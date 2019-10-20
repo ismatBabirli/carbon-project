@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CCASW</title>
+    <title>Make Earth Cool Again</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,7 +34,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="index.html">CCASW</a>
+        <a class="navbar-brand" href="index.html">Make Earth Cool Again</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
@@ -195,9 +195,10 @@
 
 
 <section id="section_image" class="ftco-section">
-    <div class="container lake">
-        <img id="image_1" width="100%" height="100%" style="display: none" src="images/lake/lake1.jpeg">
-        <img id="image_2" style="position: absolute;top: 0;left: 0; display: none" width="99%" height="99%"
+    <div class="container lake"  id="images" style="display:none;">
+        <span class="quote-main">Don't you want to prevent this?</span>
+        <img id="image_1" width="99%" height="99%" src="images/lake/lake1.jpeg">
+        <img id="image_2" style="position: absolute;left: 0; top: 5%" width="99%" height="99%"
              src="images/lake/lake2.jpeg">
     </div>
 
@@ -210,8 +211,7 @@
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Adventure</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+                    <p>MECA: Make Earth Cool Again.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                         <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -236,7 +236,7 @@
                             </li>
                             <li><a href="#"><span class="icon icon-phone"></span><span
                                         class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@meca.com</span></a>
                             </li>
                         </ul>
                     </div>
@@ -251,7 +251,7 @@
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                     All rights reserved | <a
-                        href="http://localhost:2000" target="_blank">CCASW</a>
+                        href="http://localhost:2000" target="_blank">MECA</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
@@ -348,8 +348,7 @@
 
 
     function imageProcess() {
-        document.getElementById('image_1').style.display = '';
-        document.getElementById('image_2').style.display = '';
+        document.getElementById('images').style.display = '';
         smoothScroll("section_image")
     }
 
